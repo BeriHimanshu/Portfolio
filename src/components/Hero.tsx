@@ -33,8 +33,18 @@ export default function Hero() {
     <section id="hero" className="hero">
       <div className="heroGlow" />
       <div className="heroContent">
-        <span className="preTitle">Welcome to my Portfolio</span>
-        <h1 className="name">{portfolioData.name}</h1>
+        <h1 className="name">
+          {(() => {
+            const parts = portfolioData.name.trim().split(' ');
+            const last = parts.pop();
+            const first = parts.join(' ');
+            return (
+              <>
+                {first} <span className="nameItalic">{last}</span>
+              </>
+            );
+          })()}
+        </h1>
         <p className="tagline">{portfolioData.tagline}</p>
 
         {/* Social Icons */}

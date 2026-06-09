@@ -1,5 +1,5 @@
 .contact {
-  padding: 8rem 1.5rem 4rem;
+  padding: 4rem 1.5rem 3rem;
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
@@ -78,7 +78,7 @@
 
 @media (max-width: 768px) {
   .contact {
-    padding: 6rem 1.5rem 3rem;
+    padding: 3rem 1.5rem 2rem;
   }
 
   .contactContainer {

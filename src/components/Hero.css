@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 8rem 1.5rem 4rem;
+  padding: 8rem 1.5rem 2rem;
   overflow: hidden;
 }
 
@@ -46,16 +46,22 @@
 }
 
 .name {
-  font-size: 4.5rem;
-  font-weight: 800;
-  letter-spacing: -0.03em;
-  line-height: 1.1;
+  font-family: var(--font-playfair), Georgia, 'Times New Roman', serif;
+  font-size: 5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
   margin: 0;
   background: var(--accent-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+}
+
+.nameItalic {
+  font-style: italic;
+  font-weight: 400;
 }
 
 .tagline {
@@ -143,7 +149,7 @@
 
 @media (max-width: 768px) {
   .name {
-    font-size: 3rem;
+    font-size: 3.25rem;
   }
 
   .tagline {
