@@ -1,0 +1,14 @@
+# Ignore vcs
+.git
+.svn
+.hf
+
+# Ignore dependencies and build artifacts
+node_modules
+.next
+out
+build
+.pnpm-store
+
+# Ignore system files
+.DS_Store
