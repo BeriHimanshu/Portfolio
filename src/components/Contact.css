@@ -1,0 +1,106 @@
+.contact {
+  padding: 8rem 1.5rem 4rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+.contactContainer {
+  background-color: var(--card-background);
+  border: 1px solid var(--card-border);
+  padding: 4rem 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.contactHeading {
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin-bottom: 0.5rem;
+}
+
+.contactSub {
+  font-size: 1.125rem;
+  color: var(--muted);
+  max-width: 500px;
+  line-height: 1.6;
+  margin: 0 auto 1.5rem;
+}
+
+.contactLinksGroup {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.contactLinkCard {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.875rem 1.5rem;
+  border-radius: 9999px;
+  background-color: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--card-border);
+  color: var(--muted);
+  font-weight: 500;
+  font-size: 0.9375rem;
+  transition: all 0.3s ease;
+}
+
+.contactLinkCard:hover {
+  color: var(--foreground);
+  border-color: var(--accent-blue);
+  background-color: rgba(59, 130, 246, 0.05);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.1);
+}
+
+.footer {
+  margin-top: 6rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--card-border);
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 6rem 1.5rem 3rem;
+  }
+
+  .contactContainer {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .contactHeading {
+    font-size: 2rem;
+  }
+
+  .contactSub {
+    font-size: 1rem;
+  }
+
+  .contactLinksGroup {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .contactLinkCard {
+    width: 100%;
+    justify-content: center;
+  }
+}
