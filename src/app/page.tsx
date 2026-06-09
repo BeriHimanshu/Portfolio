@@ -8,10 +8,12 @@ import Education from '@/components/Education';
 import Certifications from '@/components/Certifications';
 import Contact from '@/components/Contact';
 import ScrollReveal from '@/components/ScrollReveal';
+import AnimatedBackground from '@/components/AnimatedBackground';
 
 export default function Home() {
   return (
     <>
+      <AnimatedBackground />
       <ScrollReveal />
       <Navbar />
       <Hero />

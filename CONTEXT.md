@@ -27,3 +27,7 @@ _Avoid_: Header, banner, splash
 **Accent Gradient**:
 The Blue → Teal (`#3B82F6` → `#14B8A6`) gradient used for headings, hover states, and visual emphasis throughout the site.
 _Avoid_: Theme color, brand color
+
+**Animated Background**:
+A full-screen interactive canvas constellation animation that renders in the background of the layout, connecting floating particles with lines based on cursor proximity.
+_Avoid_: Static background, video background, canvas wallpaper
