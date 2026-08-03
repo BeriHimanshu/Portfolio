@@ -38,15 +38,28 @@ export default function Projects() {
                   </span>
                 ))}
               </div>
-              <a
-                href={project.githubUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="viewCodeLink"
-              >
-                <span>View Repository</span>
-                <ExternalLink size={14} />
-              </a>
+              <div className="projectLinksRow">
+                <a
+                  href={project.githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="viewCodeLink"
+                >
+                  <span>View Repository</span>
+                  <ExternalLink size={14} />
+                </a>
+                {project.liveUrl && (
+                  <a
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="viewCodeLink liveDemoLink"
+                  >
+                    <span>Live Demo</span>
+                    <ExternalLink size={14} />
+                  </a>
+                )}
+              </div>
             </div>
           </div>
         ))}

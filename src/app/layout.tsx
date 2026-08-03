@@ -16,7 +16,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: 'Himanshu Beri | Data Science Portfolio',
+  title: 'Himanshu Himanshu | Data Science Portfolio',
   description:
     "Data Science Master's student at NJIT showcasing project experience, skills, and certifications.",
 };

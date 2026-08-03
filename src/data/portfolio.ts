@@ -26,6 +26,7 @@ export interface Project {
   highlights: string[];
   techTags: string[];
   githubUrl: string;
+  liveUrl?: string;
 }
 
 export interface Education {
@@ -55,7 +56,7 @@ export interface PortfolioData {
 }
 
 export const portfolioData: PortfolioData = {
-  name: 'Himanshu Beri',
+  name: 'Himanshu Himanshu',
   tagline: 'Data Science Student | Machine Learning Enthusiast',
   summary:
     "Data Science Master's student at NJIT with expertise in Python, SQL, and data visualization. Enhanced cybersecurity measures by analyzing 100K+ log events weekly and achieving a 30% increase in detection accuracy. Leveraged data insights to drive a 15% sales boost through optimized reporting and visualization tools like Power BI.",
@@ -69,7 +70,7 @@ export const portfolioData: PortfolioData = {
     },
     {
       platform: 'LinkedIn',
-      url: 'https://linkedin.com/in/himanshu-beri',
+      url: 'https://www.linkedin.com/in/himanshu-beri',
       label: 'linkedin.com/in/himanshu-beri',
       icon: 'Linkedin',
     },
@@ -82,36 +83,44 @@ export const portfolioData: PortfolioData = {
   ],
   skills: [
     {
-      category: 'Programming & Frameworks',
+      category: 'Cloud, DevOps & CI/CD',
       skills: [
-        'Python',
-        'SQL',
-        'Pandas',
-        'NumPy',
-        'SciPy',
-        'Matplotlib',
-        'Scikit-Learn',
-        'Hadoop',
-        'Spark',
-        'Kafka',
-        'Hive',
+        'Amazon Web Services (AWS)',
+        'Microsoft Azure',
+        'Google Cloud (GCP)',
+        'Docker',
+        'GitHub Actions',
+        'CI/CD Pipelines',
+        'Azure App Services',
       ],
     },
     {
-      category: 'Data Science & Machine Learning',
-      skills: ['Data Analysis', 'Machine Learning', 'Big Data Engineering'],
+      category: 'Machine Learning & MLOps',
+      skills: [
+        'Machine Learning',
+        'End-to-End ML Pipelines',
+        'Model Deployment',
+        'Scikit-Learn',
+        'TensorFlow',
+        'CatBoost',
+        'XGBoost',
+      ],
     },
     {
-      category: 'Data Visualization & Reporting',
-      skills: ['Power BI', 'Excel', 'Business Intelligence (SSAS, SSIS, SSRS)'],
+      category: 'Big Data & Data Engineering',
+      skills: ['PySpark', 'Apache Hadoop', 'Apache Spark', 'Apache Kafka', 'Apache Hive', 'Data Analysis'],
     },
     {
-      category: 'Databases & Cloud',
-      skills: ['SQL Server', 'MySQL', 'Amazon Web Services', 'Microsoft Azure', 'Google Cloud'],
+      category: 'Programming & Web Frameworks',
+      skills: ['Python', 'SQL', 'Flask', 'Pandas', 'NumPy', 'SciPy', 'Matplotlib'],
     },
     {
-      category: 'Tools & Platforms',
-      skills: ['Anaconda', 'Git', 'GitHub', 'Visual Studio Code', 'PyCharm', 'Google Colab'],
+      category: 'Databases & BI Tools',
+      skills: ['SQL Server', 'MySQL', 'Power BI', 'Advanced Excel', 'SSAS', 'SSIS', 'SSRS'],
+    },
+    {
+      category: 'Developer Tools',
+      skills: ['Git', 'GitHub', 'VS Code', 'PyCharm', 'Anaconda', 'Google Colab'],
     },
   ],
   experience: [
@@ -129,18 +138,43 @@ export const portfolioData: PortfolioData = {
       role: 'Student Assistant, Operations & Data',
       organization: 'Profeta Center, NJIT',
       location: 'Newark, New Jersey',
-      duration: 'Nov 2025 - Present',
+      duration: 'Nov 2025 - May 2026',
       highlights: [
         'Optimized logistics tracking for events, workshops, & startup sessions using Microsoft Excel, facilitating improved event planning by enhancing data analysis of participation metrics.',
         'Enhanced decision-making processes by constructing & maintaining Excel-based spreadsheets, reports, & dashboards to effectively monitor daily operations & startup engagement activities.',
       ],
     },
+    {
+      role: 'SOC Analyst Intern, Managed Detection & Response',
+      organization: 'Aujas CyberSecurity',
+      location: 'Gurugram, India',
+      duration: 'Feb 2024 - Apr 2024',
+      highlights: [
+        'Analyzed 100K+ security log events weekly across network and endpoint environments, contributing to a 30% increase in threat detection accuracy.',
+        'Monitored real-time SIEM alerts and performed triage on security incidents in a 24/7 Security Operations Center (SOC) environment to mitigate potential cyber threats.',
+      ],
+    },
   ],
   projects: [
     {
+      title: 'Student Performance Predictor',
+      role: 'End-to-End ML & Azure Deployment',
+      duration: 'Feb 2026 - Apr 2026',
+      summary:
+        'Architected a modular end-to-end ML pipeline in Python, decoupling data ingestion, feature preprocessing, and model training, then containerized and deployed it to Azure with automated CI/CD.',
+      highlights: [
+        'Architected a modular end-to-end ML pipeline in Python (src/), decoupling data ingestion, feature preprocessing, and model training for maintainability.',
+        'Trained and hyperparameter-tuned multiple ML algorithms (CatBoost, XGBoost, Scikit-Learn) with automated artifact tracking for model binaries.',
+        'Containerized the Flask web application with Docker and configured automated CI/CD pipelines via GitHub Actions for zero-downtime deployment to Microsoft Azure App Services.',
+      ],
+      techTags: ['Python', 'CatBoost', 'XGBoost', 'Scikit-Learn', 'Flask', 'Docker', 'GitHub Actions', 'Azure'],
+      githubUrl: 'https://github.com/BeriHimanshu/Generic_ML_Project',
+      liveUrl: 'https://studentperformanceindicator-atetdmcxepg7d7ak.eastus-01.azurewebsites.net/predictdata',
+    },
+    {
       title: 'Microsoft Stock Price Forecasting',
       role: 'Machine Learning Developer',
-      duration: 'Feb 2026 - Apr 2026',
+      duration: 'Oct 2025 - Nov 2025',
       summary:
         'Developed a stacked LSTM model (3 layers, 50 units each) to forecast Microsoft stock prices using 15+ years of historical data.',
       highlights: [
@@ -151,26 +185,13 @@ export const portfolioData: PortfolioData = {
       techTags: ['Python', 'LSTM', 'TensorFlow', 'MinMaxScaler', 'Time-Series'],
       githubUrl: 'https://github.com/BeriHimanshu/Time-Series-Forecasting-Using-Stacked-LSTM',
     },
-    {
-      title: 'Census Income Prediction',
-      role: 'Machine Learning Developer',
-      duration: 'Oct 2025 - Nov 2025',
-      summary:
-        'Conducted a comparative analysis of Linear Support Vector Machine & Linear Regression models using Python & Scikit-learn, achieving a 7% increase in income level predictions.',
-      highlights: [
-        'Conducted a comparative analysis of Linear Support Vector Machine & Linear Regression models using Python & Scikit-learn, achieving a 7% increase in income level predictions & effectively addressing a real-world imbalanced classification challenge.',
-        'Evaluated model performance using balanced accuracy and 5-fold cross-validation, demonstrating the superiority of margin-based classifiers over regression for income prediction.',
-      ],
-      techTags: ['Python', 'Scikit-Learn', 'SVM', 'Linear Regression', 'Cross-Validation'],
-      githubUrl: 'https://github.com/BeriHimanshu/Census-Income-Prediction',
-    },
   ],
   education: [
     {
       degree: "Master's of Science in Data Science",
       institution: 'New Jersey Institute of Technology',
       location: 'Newark, USA',
-      duration: 'May 2027',
+      duration: 'Jan 2024 - May 2027',
     },
     {
       degree: "Bachelor's of Technology in Computer Science",

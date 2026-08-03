@@ -116,6 +116,12 @@
   border: 1px solid rgba(59, 130, 246, 0.12);
 }
 
+.projectLinksRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
 .viewCodeLink {
   display: flex;
   align-items: center;
@@ -129,6 +135,14 @@
 
 .viewCodeLink:hover {
   color: var(--accent-teal);
+}
+
+.liveDemoLink {
+  color: var(--accent-teal);
+}
+
+.liveDemoLink:hover {
+  color: var(--accent-blue);
 }
 
 @media (max-width: 768px) {
