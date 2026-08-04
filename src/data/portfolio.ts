@@ -191,13 +191,13 @@ export const portfolioData: PortfolioData = {
       degree: "Master's of Science in Data Science",
       institution: 'New Jersey Institute of Technology',
       location: 'Newark, USA',
-      duration: 'Jan 2024 - May 2027',
+      duration: 'Sep 2025 - May 2027',
     },
     {
       degree: "Bachelor's of Technology in Computer Science",
       institution: 'Punjab Technical University',
       location: 'Mohali, India',
-      duration: 'Apr 2024',
+      duration: 'Apr 2020 - Apr 2024',
     },
   ],
   certifications: [
